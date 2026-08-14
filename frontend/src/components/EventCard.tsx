@@ -55,10 +55,10 @@ export function EventCard({ event }: Props) {
         </div>
         <span className={`shrink-0 text-xs px-2 py-1 rounded-full border ${
           event.closed
-            ? 'bg-slate-900 border-slate-700 text-slate-400'
-            : 'bg-green-950 border-green-800 text-green-400'
+            ? 'bg-slate-900/50 border-slate-700/50 text-slate-400'
+            : 'bg-amber-900/30 border-amber-800/40 text-amber-200/80 shadow-sm shadow-amber-900/10'
         }`}>
-          {event.closed ? 'Closed' : 'Active'}
+          {event.closed ? 'Closed' : 'Ongoing'}
         </span>
       </div>
 

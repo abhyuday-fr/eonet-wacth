@@ -61,9 +61,10 @@ export default function App() {
                 </p>
               </div>
             </div>
-            <span className="inline-flex items-center gap-1.5 text-xs text-green-400 bg-green-950/50 border border-green-900 px-2.5 py-1 rounded-full">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              Live
+            {/* Clean text with pulsing dot */}
+            <span className="inline-flex items-center gap-2 text-sm text-amber-100/80 tracking-wide">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400/80 animate-[pulse_3s_ease-in-out_infinite]" />
+              Observing
             </span>
           </div>
         </header>
@@ -71,8 +72,8 @@ export default function App() {
         <main className="flex-1 max-w-4xl mx-auto w-full px-8 py-6">
           <div className="flex items-center justify-between mb-4">
             <p className="text-blue-400/70 text-sm">
-              {isLoading ? 'Loading events...' : data
-                ? `${data.events.length} events tracked`
+              {isLoading ? 'Gathering observations...' : data
+                ? `${data.events.length} events observed`
                 : ''}
             </p>
           </div>
