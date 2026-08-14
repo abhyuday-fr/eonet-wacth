@@ -9,7 +9,11 @@ Real-time tracking of wildfires, storms, volcanoes, earthquakes, and more.. powe
 
 https://github.com/user-attachments/assets/b56debe3-fe3b-460a-bbf6-c50430ad0e0a 
 
-# Build and run
+# Deployed Site
+
+[eonet-watch](https://eonet-watch.onrender.com/)
+
+# If you want to build and run in local
 1. Clone the repository
 ```
   git clone https://github.com/abhyuday-fr/eonet-watch.git
