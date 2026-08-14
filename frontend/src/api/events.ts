@@ -2,9 +2,11 @@ import axios from 'axios'
 import type { EventsResponse, EventsFilter } from '../types/events'
 
 // In development, Vite proxies /api to localhost:8080
-// In production, /api resolves to your deployed server
+// In production, Vite injects VITE_API_URL to point to the deployed Go backend
 const client = axios.create({
-  baseURL: '/api/v1',
+  baseURL: import.meta.env.VITE_API_URL 
+    ? `${import.meta.env.VITE_API_URL}/api/v1` 
+    : '/api/v1',
   headers: {
     'Content-Type': 'application/json',
   },
